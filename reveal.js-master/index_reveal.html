@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+ <!-- option -->
+        <link rel="stylesheet" href="workflows/CONTRIBUTING.md"> 
+        <link rel="stylesheet" href="workflows/FUNDING.yml"> 
+    
+        <link rel="stylesheet" href="css/print/paper.scss"> 
+        <link rel="stylesheet" href="css/print/pdf.scss"> 
+        <link rel="stylesheet" href="css/layout.scss"> 
+        <link rel="stylesheet" href="css/reveal.scss"> 
+    
+        <!-- <link rel="stylesheet" href="css/theme/source/serif.scss"> 
+        <link rel="stylesheet" href="css/theme/template/mixins.scss">  -->
+    
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css"> 
+        <link rel="stylesheet" href="dist/reveal.esm.js"> 
+        <link rel="stylesheet" href="dist/reveal.esm.js.map"> 
+        <link rel="stylesheet" href="dist/reveal.js"> 
+        <link rel="stylesheet" href="dist/reveal.js.map"> 
+    
+        <!-- <link rel="stylesheet" href="dist/theme/serif.css">
+        <link rel="stylesheet" href="dist/theme/fonts/league-gothic/">  
+        <link rel="stylesheet" href="dist/theme/fonts/league-gothic/league-gothic.css"> 
+        <link rel="stylesheet" href="dist/theme/fonts/league-gothic/league-gothic.eot"> 
+        <link rel="stylesheet" href="dist/theme/fonts/league-gothic/league-gothic.ttf"> 
+        <link rel="stylesheet" href="dist/theme/fonts/league-gothic/league-gothic.woff"> 
+        <link rel="stylesheet" href="dist/theme/fonts/league-gothic/LICENSE">  -->
+    
+        <link rel="stylesheet" href="js/config.js"> 
+        <link rel="stylesheet" href="package.json"> 
+        <link rel="stylesheet" href="index_slices_reveal.js.pdf"> 
+        <link rel="stylesheet" href="gulpfile.js"> 
+        <link rel="stylesheet" href="package-lock.json"> 
+        <link rel="stylesheet" href="js/components/playback.js"> 
+        <link rel="stylesheet" href="js/index.js"> 
+        <link rel="stylesheet" href="js/reveal.js"> 
+        <link rel="stylesheet" href="js/controllers/plugins.js"> 
+        <link rel="stylesheet" href="js/controllers/print.js"> 
+        <link rel="stylesheet" href="js/controllers/progress.js"> 
+        <link rel="stylesheet" href="js/controllers/slidenumber.js"> 
+    
+        <link rel="stylesheet" href="js/utils/device.js"> 
+        <link rel="stylesheet" href="js/utils/loader.js"> 
+    
+        <link rel="stylesheet" href="plugin/markdown/markdown.esm.js"> 
+        <link rel="stylesheet" href="plugin/markdown/markdown.js"> 
+        <link rel="stylesheet" href="plugin/markdown/plugin.js"> 
+    
+        <link rel="stylesheet" href="plugin/notes/notes.esm.js"> 
+        <link rel="stylesheet" href="plugin/notes/notes.js"> 
+        <link rel="stylesheet" href="plugin/notes/plugin.js"> 
+        <link rel="stylesheet" href="plugin/notes/speaker-view.html"> 
+    
+        <link rel="stylesheet" href="plugin/zoom/plugin.js"> 
+        <link rel="stylesheet" href="plugin/zoom/zoom.esm.js"> 
+        <link rel="stylesheet" href="plugin/zoom/zoom.js"> 
+        <!-- option -->
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h4>大規模言語処理モデルGPT-4/LLMについて</h4>
+                    <p>目次</p>
+                    <p>第１章（前編）</p>
+                    <p>1.1. 自然言語処理および大規模言語モデルについて</p>
+                    <p>1.2. 機械学習について</p>
+                    <p>1.3. 人工知能と深層学習について</p>
+                    <p>1.4. 大規模機械学習モデル LLM(ChatGPT/GPT-4)</p>
+				</section>
+
+				<section>
+					<h4>大規模言語処理モデルGPT-4/LLMについて</h4>
+                    <p>目次</p>
+                    <p>第１章（後編）</p>
+                    <p>1.5. ChatGPT/GPT-4のはじめ方</p>
+                    <p>1.6. LLM大規模言語モデルおよびライブラリの紹介</p>
+                    <p>1.7. 大型自然言語処理のGPTモデル応用例</p>
+                    <p>1.8. その他GPT以外の特殊なモデルの紹介</p>
+                    <p>1.9. 大規模言語モデルのAI活用例</p>
+				</section>
+
+				<section>
+                    <h4>人工知能プログラミング</h4>
+                    <h4>実践入門(参考書籍）</h4>
+                   
+                    <p>GPT-4（Generative Pre-trained Transformer）、ChatGPTの大規模言語モデルの活用例、機械学習、深層学習の概要・仕組みと関係を学ぶ</p>
+                    <p><small>Python3.10/LlamaIndex0.6.12/LangChain0.0.181</small></p>
+
+                    <p><small>PDF版<a href="https://www.borndigital.co.jp/book/30237.html" target="_blank">ダウンロード</a></small></p>
+                    <p><small>本書籍に使われるサンプル<a href="https://www.borndigital.co.jp/book/" target="_blank">データのダウンロード </a></small></p>
+				</section>     
+                
+			
+				<section>
+                <h4>1.1.1. 自然言語処理および大規模言語モデル</h4>  
+                <p><small>自然言語:日本語や英語などの日常的に使う言語</small></p>
+                <p><small>自然言語処理:自然言語をコンピュータで処理する</small></p>
+                <p><small>大規模言語モデル(Large Language Model(LLM)):</small></p>
+                <p><small>膨大な量のデータを学習し、検索された自然言語処理</small></p>
+                <p><small>タスクを実行する深層学習モデルのこと</small></p>
+				</section>
+
+                <section>
+                  <h4>1.1.2. 大規模言語処理例:</h4>  
+                  <p><small>LLMモデルは入力文章を任意として認識し、次の文章を予測するように大規模な</small>
+                    <small>事前学習データを用いて、その予測の文章を出力する自然な文章生成を対応する。</small></p>
+                        <figure style="text-align: center;">
+                          <a href="https://github.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain"><img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.1.jpeg" alt="大規模言語処理の例" width="80%" border="1">
+                          </a>
+                          <small><figcaption>図1.1.2. 出所: MiyjyGithub公式Webサイト </figcaption><figcaption>大規模言語処理の例</figcaption></small>
+                        </figure>
+				</section>      
+                
+                <section> 
+                    <h4 id="1.2.1.-%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0">1.2.1. &#27231;&#26800;&#23398;&#32722;&#12471;&#12473;&#12486;&#12512;<a class="anchor-link" href="#1.2.1.-%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0"></a></h4>
+                    <figure style="text-align: center;">
+                      <a href="https://github.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.2.1.jpeg" alt="機械学習システムの例" width="60%" border="1">
+                      </a>
+                      <small><figcaption>図1.2.1. 出所: MiyjyGithub公式Webサイト</figcaption><figcaption>機械学習システムの例</figcaption></small>
+                    </figure>
+                </section> 
+
+
+                <section> 
+                    <h4 id="1.2.2.-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%AD%E3%83%B3%E7%A5%9E%E7%B5%8C%E5%AD%A6%E7%BF%92">1.2.2. &#12491;&#12517;&#12540;&#12525;&#12531;&#31070;&#32076;&#23398;&#32722;<a class="anchor-link" href="#1.2.2.-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%AD%E3%83%B3%E7%A5%9E%E7%B5%8C%E5%AD%A6%E7%BF%92"></a></h4>
+                    <p><small>入力データ:X、出力データ:y</small></p>
+                    <p><small>重みパラメーター(ニューロン同士の繋がり強度):W、闘値(判断を下す基準や限界値):θ</small></p>
+                    <p><small>ニューロン神経学習出力の例</small></p>
+                    <figure style="text-align: center;">
+                        <a href="https://github.com/Miyjy/Format">
+                          <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.2.2.2.jpeg" alt="ニューロン神経学習の例" width="55%" border="1">
+                        </a>
+                        <small><figcaption>図1.2.2. 出所: MiyjyGithub公式Webサイト</figcaption><figcaption>ニューロン神経学習の例</figcaption></small>
+                      </figure>  
+                </section> 
+
+                <section>         
+                    <h4 id="1.2.3.-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF">1.2.3. &#12491;&#12517;&#12540;&#12521;&#12523;&#12493;&#12483;&#12488;&#12527;&#12540;&#12463;<a class="anchor-link" href="#1.2.3.-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF"></a></h4>
+                    <p><small>ニューラルネットワーク:人間の脳の神経回路を模した数理モデルのこと</small></p>
+                    <p>モデル → 学習 → 推論</p>
+                    <p><small>入力データ:X、出力データ:y、バイアス: b、重みパラメーター:W(b,wによる誤差逆伝播)</small></p>
+                    <p><small>DNNはNNより中間層が多く予測演算や誤差逆伝播法の推論実行回数がより多いため精度の高い答えが出力される。</small></p>    
+                    <figure style="text-align: center;">
+                      <a href="https://github.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.2.3.jpeg" alt="ニューラルネットワークにおける学習回路の例" width="45%" border="1">
+                      </a>
+                      <small><figcaption>図1.2.3. 出所: NTTData公式Webサイト</figcaption><figcaption>ニューラルネットワークにおける学習回路の例</figcaption></small>
+                    </figure>      
+            </section>
+                
+                
+            <section>      
+                <h4>1.3.1. 機械学習と深層学習</h4>   
+                 <p><small>機械学習(マシンラーニング)とは大量のデータを人工知能的な</small>
+                 <small>処理をするために推論を機械に生成させる手法(左図）</small></p>
+                <p><small>深層学習(デイープラーニング)とは脳神経細胞構造でネットワーク化</small>
+                <small>した機械学習モデルによる深学習法（処理層が多い）(右図）</small></p>       
+                <div class="side-by-side">
+                    <a href="https://media3.giphy.com"></a>
+                    <img src="https://media3.giphy.com/media/iPj5oRtJzQGxwzuCKV/giphy.gif" alt="機械学習"width="45%" border="1">
+                    <a href="https://media3.giphy.com"></a>
+                    <img src="https://media2.giphy.com/media/NsBknNwmmWE8WU1q2U/giphy.gif" alt="深層学習"width="20%" border="1">
+                </div>
+                  <small><p>図1.3.1. 出所: giphy.com公式Webサイト｜人工知能機械学習と深層学習のイメージ</p></small>
+           </section>
+
+                
+            
+
+           <section>
+            <h4 id="1.3.2.-%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%83%BB%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%A8%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%EF%BC%9A">1.3.2. &#20154;&#24037;&#30693;&#33021;&#12539;&#27231;&#26800;&#23398;&#32722;&#12392;&#28145;&#23652;&#23398;&#32722;&#65306;<a class="anchor-link" href="#1.3.2.-%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%83%BB%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%A8%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%EF%BC%9A"></a></h4>
+            <p>人工知能 (AI):</p>
+                <p><small>学習・推論・判断という知能をもつ機能を備えたコンピューターシステムで、AIの中に機械学習があり、機械学習の1手法として、ディープラーニングがある。機械学習とはデータから学習し、そこに潜むパターンを見つけ出すことができる人工知能の技術で、深層学習は、多くの層が重なった深いニューラルネットを使った機械学習技術</small></p>
+            <p>最先端人工知能研究開発企業OpenAIについて:</p>
+                <p><small>penAIとはアメリカの人工知能の開発を行っている企業で、人類全体に利益をもたらす汎用人工知能を普及・発展させることを目標に掲げ、AI分野の研究、開発、教育などの分野で活動し、AIの安全性、信頼性、透明性、説明可能性などの問題に対応</small></p>
+            </section>
+
+
+            <section>         
+                <h4>1.3.3. Open AIのホームページ</h4>
+                <div class="centered-figure">
+                <figure style="text-align: center;">
+                  <a href="https://openai.com/">
+                    <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.3.2.jpg" alt="OpenAIのホームページ" width="40%" border="1">
+                  </a>
+                  <figcaption><small>図1.3.3. 出所:OpenAI公式Webサイト｜OpenAIのホームページ</small></figcaption>
+                </figure>  
+                    </div>    
+            </section>
+
+
+            <section>
+              <h4>1.4. 機械学習LLM(CHATGPT/GPT-4)</h4>
+          
+              <div class="side-by-side">
+                  <div class="figure-container">
+                      <figure>
+                          <a href="https://github.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain">
+                              <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.4.1.jpeg" alt="機械学習LLMシステムの例" width="30%" border="1">
+                          </a>
+                          <figcaption><small>図1.4.1. 機械学習LLMシステムの例</small></figcaption>
+                      </figure>
+                  </div>
+                  <div class="figure-container">
+                      <figure>
+                          <a href="https://github.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain">
+                              <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.4.2.jpeg" alt="機械学習LLMシステムの例" width="30%" border="1">
+                          </a>
+                          <figcaption><small>図1.4.2. 機械学習LLMシステムの例</small></figcaption>
+                      </figure>
+                  </div>
+              </div>
+          
+              <p><small>機械学習(LLM)のシステム: LLMは、大量のテキストデータを用いて学習された深層ニューラルネットワークを用いて、自然言語の処理を行う。GoogleのBERT、OpenAIのChatGPTにつかわれている。(ChatGPT/GPT-4:人工知能大規模自然言語処理モデル)</small></p>
+          
+              <p><small>機械学習(LLM)のファインチューニングシステム: 大量のデータを投げれば自動的に解決するような創発的な特性はあるが、ファインチューニングの場合、「事実」の学習よりは「形式」の学習の方が効果的である。</small></p>
+          </section>
+        
+            <section>         
+                <h4>1.5.自然言語処理モデルの進化過程(2015~2019)</h4>
+                <div class="centered-figure">
+                    <a href="Miyjy/OpenAI_GPT4_ChatGPT_LangChain">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Table.1.png" alt="ChatGPTのホームページ" width="70%" border="1">
+                      </a>
+                  <small><figcaption>表.1 出所: MiyjyGithub公式Webサイト|GPT-4になるまでの自然言語処理モデルの進化</figcaption></small>
+                </figure>  
+                    </div>    
+            </section>
+
+
+
+            <section>
+                <h4>1.5.1. ChatGPT/GPT-4のはじめ方</h4>   
+                <p><small>1.Get startedをクリックしメールアドレスやパスワードを入力する<a href="https://openai.com/">https://openai.com/</a></p></small>
+                 <p><small>2.Continueをクリックしてメールアドレスを認証する</small></p>
+                 <p><small>3.携帯電話番号を登録すると携帯にコードが送られる</small></p>
+                 <p><small>4.コードを入力ー&gt;Nextー&gt;Nextー&gt;Doneー&gt;登録完了（ログイン画面が表示される)</small></p>   
+                <figure style="text-align: center;">
+                    <a href="https://openai.com/">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.5.1.png" alt="ChatGPTのホームページ" width="40%" border="1">
+                      </a>
+                    <small><p>図1.5.1 出所: OpenAI公式Webサイト|ChatGPTのホームページ</p></small>
+                    </figure>     
+
+            </section>   
+
+
+            <section>
+                <h4>1.5.2. 登録後のログイン流れ</h4>   
+                <figure style="text-align: center;">
+                    <a href="https://openai.com/">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.5.2.jpeg" alt="ChatGPTのアカウントログイン画面" width="60%" border="1">
+                      </a>
+                    <p><small>図1.5.2. 出所:OpenAI公式Webサイト|ChatGPTのアカウントログイン画面</small></p>
+                    </figure>     
+            </section>   
+
+            <section>
+              <h4>1.5.3. ChatGPTがの画面構成</h4>   
+              <figure style="text-align: center;">
+                  <a href="https://openai.com/">
+                      <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.5.3.jpeg" alt="ChatGPTのアカウントログイン画面" width="70%" border="1">
+                    </a>
+                  <small><p>図1.5.3. 出所:OpenAI公式Webサイト|ChatGPTがの画面構成</p></small>
+                  </figure>     
+          </section>   
+
+            <section>
+                <h4>1.5.4. 対応言語と機能</h4>   
+                <p>多様なタスクに対応:</p>                           
+            <p><small>プログラミング言語も２０種類以上も対応する: Python, JavaScript, Java, C++, C#, Ruby, Swift, Go, PHP, TypeScript, Rust, Kotlin, Perl, Lua, R, MATLAB, Haskell, Scala, Julia, Shell scripting languages (e.g., Bash)</small></p>
+            <p>多様なタスク機能:</p>  
+            <p><small>会話中の学習能力があるため連続でなぜなぜ質問ができる</small></p>
+            <p><small>対話、テキスト生成、質問応答、要約、翻訳、プログラミング言語対応、プログラム生成などさまざまな言語処理が実行できる</small></p>
+        </section> 
+
+        <section>
+            <h4>1.5.5. GPT-3.5とGPT-4の性能</h4>   
+            <table>
+                <thead><tr>
+                <th>性能比較表</th>
+                <th>GPT-3.5</th>
+                <th>GPT-4</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>推論度</td>
+                <td>3</td>
+                <td>5</td>
+                </tr>
+                <tr>
+                <td>速度</td>
+                <td>2</td>
+                <td>2</td>
+                </tr>
+                <tr>
+                <td>簡潔度</td>
+                <td>1</td>
+                <td>4</td>
+                </tr>
+                </tbody>
+                </table>
+
+            <p><small>注意点:学習しているデータは2021年までのものですのでそれ以後の情報は得られない。あくまでも人間の入力した検索キーワードで対応しているため、キーワードの誘導性により対話または検索結果に不正確な情報または誤った情報が含まれる可能性がある。検索キーワードをできるだけ明確にしておく必要がある。日本語による学習量が少ないため英語で質問した方が高精度な回答が得られることが多々ある。</small></p>
+            <p><a href="https://openai.com/research/gpt-4"><small>https://openai.com/research/gpt-4</small></a></p>
+        </section> 
+      
+           </section>
+
+				<section>
+					<h4>1.6. LLM大規模言語モデルおよびライブラリの紹介</h4>
+					<ol>
+						<li>OpenAI API(Application Programming Interface)</li>
+						<li>OpenAI Playground</li>
+						<li>DALL-EのWeb UI</li>
+            <li>LlamaIndex</li>
+            <li>LangChain</li>
+					</ol>
+				</section>
+
+            
+            <section> 
+                    <h4 id="1.-OpenAI-API(Application-Programming-Interface)%E3%81%A8%E3%81%AF">1.6.1. OpenAI API&#12392;&#12399;<a class="anchor-link" href="#1.-OpenAI-API(Application-Programming-Interface)%E3%81%A8%E3%81%AF"></a></h4>
+                    <p>OpenAI API(Application Programming Interface)</p>
+                    <p><small>ソフトウエアアプリ同士が相互に情報をやり取りするインターフェースで、ChatGPT以外にBing、Google Bard、などもAPIへのチャット機能組み込みサービスを提供する。テキスト生成、画像生成、埋め込み生成、ファインチューニング、モデレーション、音声のテキスト変換機能を持つ。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://openai.com/blog/openai-api">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.6.1.jpeg" alt="OpenAI APIのホームページ" width="25%" border="1">
+                      </a>
+                      <figcaption><small>図1.6.1. 出所:OpenAI公式Webサイト |OpenAI APIのホームページ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://openai.com/blog/openai-api"><small>https://openai.com/blog/openai-api</small></a></li>
+                    </ul>
+                    
+            </section> 
+            
+            <section> 
+                
+                    <h4 id="2.-OpenAI-Playground%E3%81%A8%E3%81%AF">1.6.2. OpenAI Playground&#12392;&#12399;<a class="anchor-link" href="#2.-OpenAI-Playground%E3%81%A8%E3%81%AF"></a></h4>
+                    <p><small>自然言語処理（プログラム生成、質問応答、文章生成、翻訳、要約）を実行することができるプラットフォームである。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://platform.openai.com/playground">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.6.2.png" alt="OpenAI Playgroundのホームページおよび画面構成" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.6.2.1. 出所:OpenAI公式Webサイト |OpenAI Playgroundのホームページ</small></figcaption>
+                      
+                    </figure><figure style="text-align: center;">
+                      <a href="https://platform.openai.com/playground">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.6.3.jpg" alt="OpenAI Playgroundのホームページおよび画面構成" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.6.2.2. 出所:OpenAI公式Webサイト |OpenAI Playgroundのホームページ画面構成</small></figcaption>
+                    </figure>
+                    <ul>
+                    <li><a href="https://platform.openai.com/playground"><small>https://platform.openai.com/playground</small></a></li>
+                    </ul>
+                    
+            </section> 
+                
+            <section> 
+               
+                    <h4 id="3.-DALL-E%E3%81%AEWeb-UI%E3%81%A8%E3%81%AF">1.6.3. DALL-E&#12398;Web UI&#12392;&#12399;<a class="anchor-link" href="#3.-DALL-E%E3%81%AEWeb-UI%E3%81%A8%E3%81%AF"></a></h4>
+                    <p><small>テキストからの画像生成や画像編集(バリエーション、インペインティング、アウトペインティング)を実行することができるプラットフォームである。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://openai.com/dall-e-2">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.6.4.png" alt="DALLL-E 2 のホームページおよび画面構成" width="10%" border="1">
+                      </a>
+                      <figcaption><small>図1.6.3.1. 出所:OpenAI公式Webサイト |DALLL-E 2 のホームページ</small></figcaption>
+                    </figure><figure style="text-align: center;">
+                      <a href="https://openai.com/dall-e-2">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.6.5.jpg" alt="DALLL-E 2 のホームページおよび画面構成" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.6.3.2. 出所:OpenAI公式Webサイト |DALLL-E 2 のホームページ画面構成</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://openai.com/dall-e-2"><small>https://openai.com/dall-e-2</small></a></li>
+                    </ul>
+                 
+            </section> 
+            
+            <section> 
+                
+                    <h4 id="4.-LlamaIndex">1.6.4. LlamaIndex<a class="anchor-link" href="#4.-LlamaIndex"></a></h4>
+                    <p><small>LLMで学習されていない情報の固まりのデータを参照し、質問応答(チャット)を作成するためのドキュメント読み込み、インデックス作成、クエリエンジン作成、質問応答関連のライブラリである。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://gpt-index.readthedocs.io/en/latest/index.html#ecosystem">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.6.6.png" alt="LlamaIndexのホームページ" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.6.4. 出所:META公式Webサイト |LlamaIndexのホームページ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://gpt-index.readthedocs.io/en/latest/index.html#ecosystem"><small>https://gpt-index.readthedocs.io/en/latest/index.html#ecosystem</small></a></li>
+                    </ul>
+                  
+            </section> 
+            
+            <section> 
+
+                    <h4 id="5.-LangChain">1.6.5. LangChain<a class="anchor-link" href="#5.-LangChain"></a></h4>
+                    <p><small>LLM呼び出しモジュールであり、複数のアプリを組み合わせて複雑なアプリケーションを構築するオーポンソースのライブラリである。</small></p>
+                    <p><small>機能例:プロンプト(入力文章)生成、複数のLLMやプロンプトの入出力を繋げる、エージェントにより処理順番を顧客要求通りに実行、エージェント特定の実行ツール、チェーンやエージェントを記憶</small></p>
+                    <p><small>活用例: AIキャラクターとの対話(Gatebox、スタックチャン、など)、ユーチューブでのAI組み込み、ロボットの制御、その他</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://docs.langchain.com/docs/category/components">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.6.7.png" alt="LangChainのホームページ" width="45%" border="1">
+                      </a>
+                      <figcaption><small>図1.6.5. 出所:META公式Webサイト |LangChainのホームページ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://docs.langchain.com/docs/category/components"><small>https://docs.langchain.com/docs/category/components</small></a></li>
+                    </ul>
+            
+            </section> 
+
+            <section> 
+
+            <h4>1.7. 大型自然言語処理のGPTモデル応用例</h4>
+              <ol>
+                <li>ImageGPT</li>
+                <li>CLIP(GPT-2モデル応用)</li>
+                <li>DALL-E(GPT-3応用)</li>
+              </ol>
+
+          </section>
+                        
+            <section> 
+               
+                    <h4 id="1.-ImageGPT">1.7.1. ImageGPT<a class="anchor-link" href="#1.-ImageGPT"></a></h4>
+                    <p><small>(Transformer自然言語処理モデル応用）</small></p>
+                    <p><small>半分の画像を入力すると残り半分の画像が生成される</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://openai.com/research/image-gpt">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.7.1.jpeg" alt="ImageGPTの画像生成イメージ" width="30%" border="1">
+                      </a>
+                      <figcaption><small>図1.7.1. 出所:OpenAI公式Webサイト |ImageGPTの画像生成イメージ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://openai.com/research/image-gpt"><small>https://openai.com/research/image-gpt</small></a></li>
+                    </ul>
+                    
+            </section> 
+            
+            <section> 
+               
+                    <h4 id="2.-CLIP(GPT-2%E3%83%A2%E3%83%87%E3%83%AB%E5%BF%9C%E7%94%A8)">1.7.2. CLIP(GPT-2&#12514;&#12487;&#12523;&#24540;&#29992;)<a class="anchor-link" href="#2.-CLIP(GPT-2%E3%83%A2%E3%83%87%E3%83%AB%E5%BF%9C%E7%94%A8)"></a></h4>
+                    <p><small> 推論時に自由にカテゴリーを指定して分類することができる</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://openai.com/research/clip">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.7.2.jpeg" alt="CLIP(GPT-2応用)の画像分類のイメージ" width="35%" border="1">
+                      </a>
+                      <figcaption><small>図1.7.2. 出所:OpenAI公式Webサイト |CLIP(GPT-2応用)の画像分類のイメージ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://openai.com/research/clip"><small>https://openai.com/research/clip</small></a></li>
+                    </ul>
+                    
+            </section> 
+            
+            <section> 
+                
+                    <h4 id="3.-DALL-E(GPT-3%E5%BF%9C%E7%94%A8)">1.7.3. DALL-E(GPT-3&#24540;&#29992;)<a class="anchor-link" href="#3.-DALL-E(GPT-3%E5%BF%9C%E7%94%A8)"></a></h4>
+                    <p><small>テキストと画像のペアのデータセットを使用して、テキストら画像を生成する</small></p>
+                    <p><small>DALLE-E2(DALLE-Eの解像度4倍)、リアルで正確な画像が生成できる</small></p>
+                    <div class="side-by-side">
+                   
+                    <figure style="text-align: center;">
+                      <a href="https://openai.com/dall-e-2">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.7.4.jpeg" alt="DALLE-E/E2(GPT-3応用)画像の例" width="20%" border="1">
+                      </a>
+                      <figcaption><small>図1.7.3.1. 出所:OpenAI公式Webサイト |DALLE-E2(GPT-3応用)画像データセット例</small></figcaption>
+                    </figure>
+                    
+                    <figure>
+                      <a href="https://openai.com/dall-e-2">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.7.5.jpeg" alt="DALLE-E/E2(GPT-3応用)画像の例" width="10%" border="1">
+                      </a>
+                      <figcaption><small>図1.7.3.2. 出所:OpenAI公式Webサイト |DALLE-E2(GPT-3応用)生成画像の例</small></figcaption>
+                    </figure>
+                    
+                  
+                </div>
+
+                    <ul>
+                    <li><a href="https://openai.com/dall-e-2"><small>https://openai.com/dall-e-2</small></a></li>
+                    </ul>
+                
+            </section>
+            
+            <section> 
+
+              <h4>1.8. その他GPT以外の特殊なモデルの紹介</h4>
+                <ol>
+                  <li>TACOTRON2+WAVEGLOWモデルの組み合わせ</li>
+                  <li>NEUTRINO</li>
+                  <li>JUKEBOX</li>
+                  <li>WHISPER</li>
+                </ol>
+  
+            </section>
+            
+            <section> 
+              <h4>1.8.1. TACOTRON2+WAVEGLOWモデルの組み合わせ</h4>
+                    <p><small>Tacotron2はテキストをメルスペクトログラムに変換、WaveGlowはメルスペクトログラムを音声に変換する深層学習モデル</small></p>
+                 
+                    <figure style="text-align: center;">
+                      <a href="https://catalog.ngc.nvidia.com/orgs/nvidia/resources/tacotron_2_and_waveglow_for_pytorch">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.8.1.jpeg" alt="Tactron2モデル構造" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.8.1. 出所:NVIDIA公式Webサイト |テキストを音声に変換するTactron2モデル構造</small></figcaption>
+                    </figure><figure style="text-align: center;">
+                      <a href="https://catalog.ngc.nvidia.com/orgs/nvidia/resources/tacotron_2_and_waveglow_for_pytorch">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.8.2.jpeg" alt="NVIDIAの企業ロゴ" width="15%" border="1">
+                      </a>
+                    
+                    </figure><ul>
+                    <li><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/resources/tacotron_2_and_waveglow_for_pytorch"><small>https://catalog.ngc.nvidia.com/orgs/nvidia/resources/tacotron_2_and_waveglow_for_pytorch</small></a></li>
+                    </ul>
+                  </section>
+                   
+            <section> 
+               
+                    <h4 id="2.-NEUTRINO">1.8.2. NEUTRINO<a class="anchor-link" href="#2.-NEUTRINO"></a></h4>
+                    <p><small>ニューラルネットワークを用いた歌声シンセサイザーモデルで、歌詞つきの楽譜から、発声タイミング・音の高さ・声質・声のかすれ具合などをニューラルネットワークで推論し、歌声を生成する。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://studio-neutrino.com/">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.8.3.jpeg" alt="AI技術の変遷" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.8.2 出所:NEUTRINO公式Webサイト |NEUTRINOのホームページ</small></figcaption>
+                    </figure>
+                    <ul>
+                    <li><a href="https://studio-neutrino.com/"><small>https://studio-neutrino.com/</small></a></li>
+                    </ul>
+                  
+            </section> 
+            
+            <section> 
+               
+                    <h4 id="3.-Jukebox">1.8.3. Jukebox<a class="anchor-link" href="#3.-Jukebox"></a></h4>
+                    <p><small>指定した条件で自動的に曲を生成する深層学習モデルで、アーティスト、ジャンル、歌詞、曲の長さを指定すると自動的に歌声つきの楽曲を生成する。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://openai.com/research/jukebox">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.8.4.jpeg" alt="Jukeboxのホームページ" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.8.3. 出所:OpenAI公式Webサイト |Jukeboxのホームページ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://openai.com/research/jukebox"><small>https://openai.com/research/jukebox</small></a></li>
+                    </ul>
+                
+            </section> 
+            
+            <section> 
+               
+                    <h4 id="4.-Whisper">1.8.4. Whisper<a class="anchor-link" href="#4.-Whisper"></a></h4>
+                    <p><small>会話音声をテキストに変換する深層学習モデルで、日本語を含む多言語の音声認識、音声翻訳、言語認識、音声区間検出などができる。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://openai.com/research/whisper">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.8.5.jpeg" alt="Whisperのホームページ" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.8.4. 出所:OpenAI公式Webサイト |"Whisperのホームページ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://openai.com/research/whisper"><small>https://openai.com/research/whisper</small></a></li>
+                    </ul>
+                   
+            </section> 
+            
+            <section> 
+
+              <h4>1.9. 大規模言語モデルのAI活用例</h4>
+                <ol>
+                  <li>MICROSOFT EDGE</li>
+                  <li>BING</li>
+                  <li>GATEBOX</li>
+                  <li>STACK-CHAN</li>
+                  <li>しずくAIユーチューバー</li>
+                  <li>CHATGPT FOR ROBOTICS</li>
+                  <li>GOOGLE BARD</li>
+                </ol>
+  
+            </section>
+            <section> 
+            
+            <h4>1.9. 大規模言語ライブラリをのAI活用例</h4>
+            <ol>
+              <li>LLAMA2</li>
+              <li>ARISTO (AI2 REASONING CHALLENGE ARC)</li>
+              <li>HELLASWAG</li>
+              <li>WINOGRANDE</li>
+              <li>MMLU</li>
+              <li>DROP(F1 SCORE)</li>
+              <li>HUMANEVAL</li>
+            </ol>
+
+        </section>
+            
+            
+            <section> 
+               
+                    <h4 id="1.-Microsoft-Edge">1.9.1. Microsoft Edge<a class="anchor-link" href="#1.-Microsoft-Edge"></a></h4>
+                    <p><small>ウェブワールド クラスのパフォーマンス、組み込みのプライバシー機能などを搭載した、高速かつ安全なブラウザーである。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://www.microsoft.com/ja-jp/edge/welcome?form=MA13FJ">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.1.jpeg" alt="Microsoft Edgeのホームページ" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.1. 出所:Microsoft公式Webサイト |Microsoft Edgeのホームページ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://www.microsoft.com/ja-jp/edge/welcome?form=MA13FJ"><small>https://www.microsoft.com/ja-jp/edge/welcome?form=MA13FJ</small></a></li>
+                    </ul>
+                 
+            </section> 
+            
+            <section> 
+                
+                    <h4 id="2.-Bing">1.9.2. Bing<a class="anchor-link" href="#2.-Bing"></a></h4>
+                    <p><small>検索、チャット、作成がすべて 1 か所で行える。チャットで Bing の新しい AI を利用した Image Creator を使用すれば、言葉を画像に変えられる。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://www.bing.com/new?form=MY028Z&OCID=MY028Z">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.2.jpeg" alt="Microsoft Bingのホームページ" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.2. 出所:Microsoft公式Webサイト |Microsoft Bingのホームページ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://www.bing.com/new?form=MY028Z&amp;OCID=MY028Z"><small>https://www.bing.com/new?form=MY028Z&amp;OCID=MY028Z</small></a></li>
+                    </ul>
+                  
+            </section> 
+            
+            <section> 
+                
+                    <h4 id="3.-Gatebox">1.9.3. Gatebox<a class="anchor-link" href="#3.-Gatebox"></a></h4>
+                    <p><small>キャラクター召喚装置「Gatebox」量産モデル、AIパートナー型オリジナルキャラクター「逢妻ヒカリ」、作業応援アプリ「CheerPro（チアプロ）」を提供している。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://www.gatebox.ai/news/20230308-chatgpt">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.3.jpeg" alt="GateboxのAI" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.3. 出所:Gatebox公式Webサイト |GateboxのAI</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://www.gatebox.ai/news/20230308-chatgpt"><small>https://www.gatebox.ai/news/20230308-chatgpt</small></a></li>
+                    </ul>
+               
+            </section> 
+            
+            <section> 
+                
+                    <h4 id="4.-Stack-chan">1.9.4. Stack-chan<a class="anchor-link" href="#4.-Stack-chan"></a></h4>
+                    <p><small>スタックチャンはJavaScript由来のコミュニケーションロボットである。</small></p>
+                    <p><small>M5Stack-embedded super-kawaii robot</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://protopedia.net/prototype/2345">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.4.jpeg" alt="スタックチャンのコミュニケーションロボット" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.4. 出所:protopedia.net公式Webサイト|コミュニケーションロボット</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://protopedia.net/prototype/2345"><small>https://protopedia.net/prototype/2345</small></a></li>
+                    </ul>
+              
+            </section> 
+            
+            <section> 
+          
+                    <h4 id="5.-%E3%81%97%E3%81%9A%E3%81%8FAI%E3%83%A6%E3%83%BC%E3%83%81%E3%83%A5%E3%83%BC%E3%83%90%E3%83%BC">1.9.5. &#12375;&#12378;&#12367;AI&#12518;&#12540;&#12481;&#12517;&#12540;&#12496;&#12540;<a class="anchor-link" href="#5.-%E3%81%97%E3%81%9A%E3%81%8FAI%E3%83%A6%E3%83%BC%E3%83%81%E3%83%A5%E3%83%BC%E3%83%90%E3%83%BC"></a></h4>
+                    <p><small>雑談、ASMR、歌ってみたなど、幅広いジャンルの配信を取り扱う</small></p>
+                    <p><small>AIVtuberチャンネルで、AIを応用して配信されている。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://www.youtube.com/channel/UCE2SWbhR2WRHPBi-bflr0-g">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.5.jpeg" alt="AI-Vtubeのイメージ" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.5. 出所:しずくAIユーチューブチャンネル公式Webサイト</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://www.youtube.com/channel/UCE2SWbhR2WRHPBi-bflr0-g"><small>https://www.youtube.com/channel/UCE2SWbhR2WRHPBi-bflr0-g</small></a></li>
+                    </ul>
+                
+            </section> 
+                
+            <section> 
+               
+                    <h4 id="6.-ChatGPT-for-Robotics%E3%81%A8%E3%81%AF">1.9.6. ChatGPT for Robotics&#12392;&#12399;<a class="anchor-link" href="#6.-ChatGPT-for-Robotics%E3%81%A8%E3%81%AF"></a></h4>
+                    <p><small>Microsoftが開発したロボット制御向けにカスタマイズしたロボットアーム、ドローン、ロボット掃除機など、複数のロボットをChatGPTのように自然言語から制御可能なプラットフォームである。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://www.microsoft.com/en-us/research/group/autonomous-systems-group-robotics/articles/chatgpt-for-robotics/">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.6.png" alt="Microsoft ChatGPT for Roboticsのホームページ" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.6. 出所:Microsoft公式Webサイト</small></figcaption>
+                      <figcaption><small>Microsoft ChatGPT for Roboticsのホームページ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://www.microsoft.com/en-us/research/group/autonomous-systems-group-robotics/articles/chatgpt-for-robotics/"><small>https://www.microsoft.com/en-us/research/group/autonomous-systems-group-robotics/articles/chatgpt-for-robotics/</small></a></li>
+                    </ul>
+                  
+            </section> 
+            
+            <section>
+                
+                    <h4 id="7.-Google-Bard">1.9.7. Google Bard<a class="anchor-link" href="#7.-Google-Bard"></a></h4>
+                    <p><small>グーグルバードとは、生成系AIで、 ユーザーが入力した質問に対し、</small></p>
+                    <p><small>違和感のない自然な文章を返すのがGoogle Bardの大きな特徴。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://bard.google.com/?utm_source=sem&utm_medium=paid-media&utm_campaign=q3jaJP_sem6">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.7.jpeg" alt="Google Bardのホームページ" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.7. 出所:Google Bard公式Webサイト |Google Bardのホームページ</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://bard.google.com/?utm_source=sem&amp;utm_medium=paid-media&amp;utm_campaign=q3jaJP_sem6"><small>https://bard.google.com/?utm_source=sem&amp;utm_medium=paid-media&amp;utm_campaign=q3jaJP_sem6</small></a></li>
+                    </ul>
+                   
+            </section> 
+                
+            <section> 
+            
+              
+                    <h4 id="8.-Llama2">1.9.8. Llama2<a class="anchor-link" href="#8.-Llama2"></a></h4>
+                    <p><small>LLMAより学習量が40%アップされ、しかもパラメーター数も</small></p>
+                    <p><small>より多いためコンテクストも2倍の長さまでプログラムできる。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://ai.meta.com/llama/">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.8.jpeg" alt="METAのLlama2パラメーター仕様" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.8. 出所:META公式Webサイト</small></figcaption>
+                      <figcaption><small>METAのLlama2パラメーター仕様</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://ai.meta.com/llama/"><small>https://ai.meta.com/llama/</small></a></li>
+                    </ul>
+                    <p><small>LlaMa:LLaMA(Large Language Model Meta AI)は1.4兆個のトークン、</small></p>
+                    <p><small>70億パラメータから650億パラメータまで学習されたモデルである。</small></p>
+              
+              
+            </section> 
+            
+            <section> 
+            
+               
+                    <h4 id="9.-Aristo-(AI2-Reasoning-Challenge-ARC))">1.9.9. Aristo (AI2 Reasoning Challenge ARC))<a class="anchor-link" href="#9.-Aristo-(AI2-Reasoning-Challenge-ARC))"></a></h4>
+                    <p><small>GPT-4応用の教育可能な推論システムによる推論と説明ができるデータセットである。メモリベースのアーキテクチャによる継続的な学習、知識と信念、普遍的な数学的推論ができる。現在の評価指数は96.3％まで達成されたとしている。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://allenai.org/aristo">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.9.jpeg" alt="Aristoのデータ処理例" width="50%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.9. 出所:allenai.org公式Webサイト |Aristoのデータ処理例</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://allenai.org/aristo"><small>https://allenai.org/aristo</small></a></li>
+                    </ul>
+                    
+                
+            </section> 
+            
+            <section> 
+            
+               
+                    <h4 id="10.-HellaSwag">1.9.10. HellaSwag<a class="anchor-link" href="#10.-HellaSwag"></a></h4>
+                    <p><small>日常的な一般常識推論データセットであり、</small></p>
+                    <p><small>現在の評価指数は95.3％まで達成されたとしている。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://huggingface.co/datasets/hellaswag/viewer/default/train?row=2">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.10.png" alt="HellaSwagのデータセット例" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.10. 出所:HuggingFace公式Webサイト |HellaSwagのデータセット例</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://huggingface.co/datasets/hellaswag/viewer/default/train?row=2"><small>https://huggingface.co/datasets/hellaswag/viewer/default/train?row=2</small></a></li>
+                    </ul>
+          
+            </section> 
+                
+            <section>
+                
+             
+                    <h4 id="11.-WinoGrande">1.9.11. WinoGrande<a class="anchor-link" href="#11.-WinoGrande"></a></h4>
+                    <p><small>代名詞照応解析による推論規則が有効に扱えていない原因を整理し常識的な推論システムを目指し、GPT-4モデルが応用されているデータセットである。現在の評価指数は87.5％まで達成されたとしている。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://mosaic.allenai.org/projects/winogrande">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.11.jpeg" alt="AI技術の変遷" width="640" border="1">
+                      </a>
+                      <figcaption><small>図1.9.11. 出所:allenai.org公式Webサイト |winograndeのデータセット例</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://mosaic.allenai.org/projects/winogrande"><small>https://mosaic.allenai.org/projects/winogrande</small></a></li>
+                    </ul>
+                    
+                  
+            </section> 
+            
+            <section> 
+            
+                    <h4 id="12.-MMLU">1.9.12. MMLU<a class="anchor-link" href="#12.-MMLU"></a></h4>
+                    <p><small>(Measuring Massive Multitask Language Understanding)</small></p>
+                    <p><small>大量のマルチタスク(マルチ質問応答選択)の言語理解度の測定モデルである。</small></p>
+                    <p><small>現在の評価指数は86.4％まで達成されたとしている。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://github.com/hendrycks/test">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.12.png" alt="MMLUモデルアクセス画面" width="20%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.12 出所:hendrycks公式Webサイト |MMLUモデルアクセス画面</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://github.com/hendrycks/test"><small>https://github.com/hendrycks/test</small></a></li>
+                    </ul>
+                   
+            </section> 
+            
+            <section> 
+            
+               
+                    <h4 id="13.-DROP(f1-score)">1.9.13. DROP(f1 score)<a class="anchor-link" href="#13.-DROP(f1-score)"></a></h4>
+                    <p><small>GPT-4応用の読解と算数の推論データセットである。</small></p>
+                    <p><small>現在の評価指数は80.9％まで達成されたとしている。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://aclanthology.org/N19-1246.pdf">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.13.png" alt="AI技術の変遷" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.13. 出所:aclanthology.org公式Webサイト |DROPのデータセット例</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://aclanthology.org/N19-1246.pdf"><small>https://aclanthology.org/N19-1246.pdf</small></a></li>
+                    </ul>
+                  
+            </section> 
+                
+            
+            <section>    
+             
+              <h4>1.9.14. HUMANEVAL</h4>
+               <p><small>OpenAI によってリリースされたHumanEval データセットには、関数シグネチャー、docstring、本体、およびいくつかの単体テストを含む 164 のプログラミング問(Python coding tasks)が含まれている。これらはコード生成によるトレーニング セットではなく、手書きで作成されいるデータセットである。</small></p>
+                    <p><small>現在の評価指数は67.0％まで達成されたとしている。</small></p>
+                    <figure style="text-align: center;">
+                      <a href="https://huggingface.co/datasets/openai_humaneval">
+                        <img src="https://raw.githubusercontent.com/Miyjy/OpenAI_GPT4_ChatGPT_LangChain/main/1/figures/Fig.1.9.14.jpeg" alt="HumanEvalデータセットコード例" width="40%" border="1">
+                      </a>
+                      <figcaption><small>図1.9.14. 出所:HumanEval公式Webサイト |HumanEvalデータセットコード例</small></figcaption>
+                    </figure><ul>
+                    <li><a href="https://huggingface.co/datasets/openai_humaneval"><small>https://huggingface.co/datasets/openai_humaneval</small></a></li>
+                    </ul>
+               
+            
+            </section>
+        
+
+
+
+				<!--LIST!!!!!!!!!!!!! <section>
+					<h4>Marvelous List</h4>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section> -->
+
+				<!-- <section>
+					<h4>Fantastic Ordered List</h4>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section> -->
+
+				<!--TABLE!!!!!!!!!!!!! <section>
+					<h4>Tabular Tables</h4>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section> -->
+
+<!-- 
+				<section>
+					<h4>Intergalactic Interconnections</h4>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section> -->
+
+				<!--MEMO!!!!!!!!!!!!!!!!!!!!!! <section>
+					<h4>Speaker View</h4>
+					<p>There's a <a href="https://revealjs.com/speaker-view/">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section> -->
+<!-- PDF!!!!!!!!!!!!!!!!!!!!
+				<section>
+					<h4>Export to PDF</h4>
+					<p>Presentations can be <a href="https://revealjs.com/pdf-export/">exported to PDF</a>, here's an example:</p>
+					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section> -->
+
+
+				<!--CODE!!!!!!!!!!!!!!!!! <section data-state="customevent">
+					<h4>State Events</h4>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.on( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section> -->
+<!-- 
+				<section>
+					<h4>Take a Moment</h4>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h4>Much more</h4>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://revealjs.com/api/">Extensive JavaScript API</a></li>
+						<li><a href="https://revealjs.com/auto-slide/">Auto-progression</a></li>
+						<li><a href="https://revealjs.com/backgrounds/#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://revealjs.com/keyboard/">Custom keyboard bindings</a></li>
+					</ul>
+				</section> -->
+<!-- 
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="https://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section> -->
+
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/slidenumber/slidenumber.js"></script>
+
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                jumpToSlide: false,
+                slideNumber: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
